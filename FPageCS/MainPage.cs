@@ -14,11 +14,12 @@ namespace FPageCS
                 Text = "FlayoutPage",
                 FontSize = 30,
                 FontAttributes = FontAttributes.Bold,
-                HorizontalOptions = LayoutOptions.Center
+                HorizontalOptions = LayoutOptions.Center,
+                TextColor = Color.Gray,
             };
             // Assemble an array of NamedColor objects.
             NamedColor[] namedColors = {
- new NamedColor ("Aqua", Color.Aqua),
+ new NamedColor ("Aquamarine", Color.Aquamarine),
  new NamedColor ("Black", Color.Black),
  new NamedColor ("Blue", Color.Blue),
  new NamedColor ("Fuchsia", Color.Fuchsia),
@@ -31,7 +32,7 @@ namespace FPageCS
  new NamedColor ("Purple", Color.Purple),
  new NamedColor ("Red", Color.Red),
  new NamedColor ("Silver", Color.Silver),
- new NamedColor ("Teal", Color.Teal),
+ new NamedColor ("Tomato", Color.Tomato),
  new NamedColor ("White", Color.White),
  new NamedColor ("Yellow", Color.Yellow)
  };
@@ -40,13 +41,13 @@ namespace FPageCS
             {
                 ItemsSource = namedColors,
                 Margin = new Thickness(10, 0),
-                BackgroundColor = Color.Black,
+                BackgroundColor = Color.White,
 
             };
             // Формирование flyout page с помощью элемента управления ListView.
             Master = new ContentPage
             {
-                Title = "Color List",
+                Title = "Цветной лист",
                 Content = new StackLayout
                 {
                     Children = {
