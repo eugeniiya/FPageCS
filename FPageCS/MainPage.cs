@@ -11,11 +11,11 @@ namespace FPageCS
             Title = "FlayoutPage Demo";
             Label header = new Label
             {
-                Text = "FlayoutPage",
+                Text = "FlayoutPage Ханаока Инна",
                 FontSize = 30,
                 FontAttributes = FontAttributes.Bold,
                 HorizontalOptions = LayoutOptions.Center,
-                TextColor = Color.Gray,
+                TextColor = Color.Green,
             };
             // Assemble an array of NamedColor objects.
             NamedColor[] namedColors = {
@@ -41,7 +41,7 @@ namespace FPageCS
             {
                 ItemsSource = namedColors,
                 Margin = new Thickness(10, 0),
-                BackgroundColor = Color.White,
+                BackgroundColor = Color.LightGreen,
 
             };
             // Формирование flyout page с помощью элемента управления ListView.
@@ -49,7 +49,9 @@ namespace FPageCS
             {
                 Title = "Цветной лист",
                 Content = new StackLayout
+                
                 {
+                    
                     Children = {
  header,
  listView
